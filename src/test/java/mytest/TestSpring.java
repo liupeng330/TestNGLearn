@@ -20,11 +20,22 @@ public class TestSpring extends AbstractTestNGSpringContextTests
     @Test
     void testEmailGenerator()
     {
+    	System.out.println("test start...");
 
         String email = emailGenerator.generate();
         System.out.println(email);
 
         Assert.assertNotNull(email);
         Assert.assertEquals(email, "feedback@yoursite.com");
+    }
+
+    @Test (groups = { "Sniff", "Regression" })
+    public void validAuthenticationTest(){
+        System.out.println(" Sniff + Regression" + System.getProperty("environment"));
+    }
+
+    @Test (groups = { "Sniff"})
+    public void notValidAuthenticationTest(){
+        System.out.println("UserName: " + System.getProperty("userName"));
     }
 }

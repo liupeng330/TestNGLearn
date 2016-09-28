@@ -1,0 +1,1 @@
+mvn clean test -Denv.OS=machahah -Denv.USER=aaabbb -Dgroups=Sniff

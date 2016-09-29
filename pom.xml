@@ -57,7 +57,7 @@
                         <userName>${env.USER}</userName>
                     </systemPropertyVariables>
                     <suiteXmlFiles>
-                        <suiteXmlFile>${basedir}/src/test/testng.xml</suiteXmlFile>
+                        <suiteXmlFile>${basedir}/src/test/java/testsuites/${suiteFile}</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>

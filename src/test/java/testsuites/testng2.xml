@@ -4,13 +4,10 @@
     <test name="Test1">
       <groups>
         <run>
-          <!--<include name="Sniff"/>-->
-          <include name="Regression"/>
+          <include name="Sniff"/>
         </run>
       </groups>
       <packages>
-          <!--<package name="com.heika.test.verify.cases.API" />-->
-          <!--<package name="com.heika.test.verify.my_test" />-->
           <package name="mytest" />
       </packages>
     </test>

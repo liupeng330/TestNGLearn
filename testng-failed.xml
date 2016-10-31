@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]">
+  <test name="Surefire test(failed)">
+    <groups>
+      <run>
+        <include name="group1"/>
+        <include name="group2"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="mytest.TestFailSuiteFile">
+        <methods>
+          <include name="test2"/>
+          <include name="test4"/>
+          <include name="test3"/>
+        </methods>
+      </class> <!-- mytest.TestFailSuiteFile -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
